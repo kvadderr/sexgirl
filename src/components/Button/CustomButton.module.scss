@@ -1,0 +1,74 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.container {
+  background-color: $color-gray;
+  border-radius: 12px;
+  padding-block: 8px;
+  padding-inline: 36px;
+  color: $color-white;
+  display: flex;
+  flex-direction: 'row';
+  gap: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $background-color;
+  }
+
+  @include for-phone {
+    &:hover {
+      background-color: $color-gray;
+    }
+  }
+
+  p {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-white;
+
+    @include for-phone {
+      flex: 1;
+      width: '100%';
+    }
+
+  }
+}
+
+.greencontainer {
+  background-color: $color-primary;
+  border-radius: 12px;
+  padding-block: 8px;
+  padding-inline: 36px;
+  border: 0;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  flex-direction: 'row';
+  gap: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $background-color;
+  }
+
+  @include for-phone {
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+
+  p {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-white;
+
+    @include for-phone {
+      flex: 1;
+      width: '100%';
+    }
+
+  }
+}

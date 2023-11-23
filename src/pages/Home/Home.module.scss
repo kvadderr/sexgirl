@@ -1,0 +1,103 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+$size: 256px;
+$base: #263238;
+$lite:  #FFF;
+$brand: #FF3D00;
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0px;
+
+  @include for-phone {
+    margin-top: 70px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.logo {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 800;
+  font-size: 120px;
+  color: $color-primary;
+
+  @include for-phone {
+    font-size: 60px;
+  }
+}
+
+.description {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: $color-white;
+  @include for-phone {
+    font-size: 20px;
+  }
+}
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  @include for-phone {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+}
+
+.smallContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.loader {
+  width : $size;
+  height: $size;
+  display: inline-block;
+  position: relative;
+  &::after , &::before {
+    content: '';
+    width : $size;
+    height: $size;
+    border-radius: 50%;
+    border:2px solid $lite;
+    position: absolute;
+    left:0;
+    top: 0;
+    animation: animloader14 2s linear infinite;
+  }
+  &::after {
+    animation-delay: 1s;
+  }
+}
+
+@keyframes rotation {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+
+
+@keyframes animloader14 {
+  0% { transform: scale(0); opacity: 1;}
+  100% { transform: scale(1); opacity: 0;}
+}

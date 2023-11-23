@@ -1,0 +1,26 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.container {
+    display: flex;
+    flex: 0 0 calc(50% - 120px);
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    color: $color-white;
+
+    @include for-phone {
+        gap: 10px;
+    }
+}
+
+p {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+
+    @include for-phone {
+        font-size: 15px;
+    }
+
+}
