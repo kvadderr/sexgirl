@@ -9,7 +9,7 @@ import axios from 'axios';
 
 const Home = () => {
 
-  const [selectedFile, setSelectedFile] = useState(null);
+  const [selectedFile, setSelectedFile] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [generatedImage, setGeneratedImage] = useState(null);
 
@@ -27,7 +27,7 @@ const Home = () => {
 
   const Image = () => {
     return (
-      <img src={selectedFile} width={310} />
+      <img src={selectedFile || undefined} width={310} />
     )
   }
 

@@ -4,7 +4,6 @@ import { Routes, Route } from 'react-router-dom'
 import Menu from "./components/Menu/Menu"
 import Home from "./pages/Home/Home"
 import Documentation from "./pages/Documentation/Documentation"
-import Examples from "./pages/Examples/Examples"
 
 function App() {
 
