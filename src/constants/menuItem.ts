@@ -1,4 +1,4 @@
-import { faDollar, faFile, faDatabase, faHouse} from '@fortawesome/free-solid-svg-icons'
+import { faDollar, faFile, faPlay, faHouse} from '@fortawesome/free-solid-svg-icons'
 
 export const menuItem = [
   {
@@ -9,8 +9,8 @@ export const menuItem = [
   },
   {
     id: 2,
-    name: "Examples",
-    icons: faDatabase,
+    name: "Generation",
+    icons: faPlay,
     key: '/examples'
   },
   {

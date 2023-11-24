@@ -51,6 +51,15 @@ $brand: #FF3D00;
   }
 }
 
+.smallText {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: $color-white;
+  @include for-phone {
+    font-size: 20px;
+  }
+}
 .advantages {
   display: flex;
   flex-wrap: wrap;

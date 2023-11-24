@@ -32,10 +32,9 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  font-family: 'SF Pro Display', sans-serif;
-  font-weight: 400;
   color: $color-white;
   padding-block: 30px;
+
   &:hover {
     color: $color-primary;
   }
@@ -48,12 +47,18 @@
     gap: 0;
     align-items: center;
     justify-content: center;
-  
+
     p {
       display: none;
     }
-      
+
   }
 
 
+}
+
+.activeMenuItemText {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
 }

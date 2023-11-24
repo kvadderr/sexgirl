@@ -73,6 +73,7 @@ const Home = () => {
         <div>
           <p className={s.logo}>SexGirl</p>
           <p className={s.description}>Dreams sometimes come true</p>
+          
         </div>
         <div className={s.advantages}>
           {
@@ -86,7 +87,7 @@ const Home = () => {
           {selectedFile && <GenerateButton onClick={generate} />}
         </div>
       </div>
-      <div style={{ width: 310, height: 450, borderRadius: 30 }}>
+      <div style={{ width: 310, height: 450, borderRadius: 30, display: 'flex', alignItems: 'center', justifyContent: 'center', alignSelf:'center' }}>
         <Render />
       </div>
     </div>

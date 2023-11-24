@@ -23,7 +23,7 @@ const MenuItem = (props: MenuItemProps) => {
   return (
     <div className={s.menuItemContainer} data-active={props.isActive ? props.isActive : null} onClick={() => clickItem(props.id, props.link)}>
       <FontAwesomeIcon icon={props.icon} className={props.isActive ? s.activeIcon : ''} />
-      <p className={props.isActive ? s.activeMenuItemText : ''}>{props.title}</p>
+      <p className={s.activeMenuItemText}>{props.title}</p>
     </div>
   )
 }

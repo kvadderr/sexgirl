@@ -3,6 +3,7 @@
 
 .container {
   margin-top: 70px;
+  margin-inline: 300px;
   color: $color-white;
   font-family: 'SF Pro Display', sans-serif;
   display: flex;
@@ -12,6 +13,7 @@
   @include for-phone {
     padding: 40px;
     margin-top: 0px;
+    margin-inline: 0px;
   }
 
   .item {
