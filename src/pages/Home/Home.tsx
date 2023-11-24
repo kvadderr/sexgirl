@@ -73,7 +73,7 @@ const Home = () => {
         <div>
           <p className={s.logo}>SexGirl</p>
           <p className={s.description}>Dreams sometimes come true</p>
-          
+
         </div>
         <div className={s.advantages}>
           {
@@ -82,12 +82,15 @@ const Home = () => {
             ))
           }
         </div>
+        <a href="https://aaio.io/" target="_blank">
+          <img src="https://aaio.io/assets/svg/banners/big/white-1.svg" title="Aaio - Сервис по приему онлайн платежей" />
+        </a>
         <div className={s.smallContainer}>
           <CustomButton setSelectedFile={setSelectedFile} />
           {selectedFile && <GenerateButton onClick={generate} />}
         </div>
       </div>
-      <div style={{ width: 310, height: 450, borderRadius: 30, display: 'flex', alignItems: 'center', justifyContent: 'center', alignSelf:'center' }}>
+      <div style={{ width: 310, height: 450, borderRadius: 30, display: 'flex', alignItems: 'center', justifyContent: 'center', alignSelf: 'center' }}>
         <Render />
       </div>
     </div>
